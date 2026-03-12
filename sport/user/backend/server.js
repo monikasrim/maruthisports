@@ -12,7 +12,12 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: ['https://maruthisports-user.vercel.app', 'http://localhost:5173', 'http://localhost:5174'],
+  origin: [
+    'https://maruthisports-user.vercel.app',
+    'https://maruthisports-user-khev0j08l-monikasrims-projects.vercel.app',
+    'http://localhost:5173',
+    'http://localhost:5174'
+  ],
   credentials: true
 }));
 

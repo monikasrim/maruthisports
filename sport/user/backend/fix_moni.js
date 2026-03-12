@@ -15,7 +15,7 @@ const fixUser = async () => {
             process.exit(1);
         }
 
-        user.role = 'admin';
+        user.role = 'user';
         user.password = '12345678'; // Schema pre-save hook will hash this
         await user.save();
 
