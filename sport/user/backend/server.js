@@ -12,12 +12,17 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: [
-    'https://maruthisports-user.vercel.app',
-    'https://maruthisports-user-khev0j08l-monikasrims-projects.vercel.app',
-    'http://localhost:5173',
-    'http://localhost:5174'
-  ],
+  origin: function (origin, callback) {
+    // Allow all vercel domains for this specific project or localhost
+    if (!origin || 
+        origin.endsWith('.vercel.app') || 
+        origin.includes('localhost') || 
+        origin.includes('127.0.0.1')) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
@@ -49,7 +54,7 @@ app.use((err, req, res, next) => {
 // Serve uploads
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // Fallback/Main source from Admin for product images
-app.use('/uploads', express.static('d:/MCA_FINAL PROJECT/sport/admin/backend/uploads'));
+// app.use('/uploads', express.static('d:/MCA_FINAL PROJECT/sport/admin/backend/uploads'));
 
 const PORT = process.env.PORT || 5000;
 

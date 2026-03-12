@@ -47,8 +47,10 @@ const Login = () => {
                 navigate('/');
             }
         } catch (error) {
-            console.error(error);
-            alert(error.response?.data?.message || 'Login failed');
+            console.error('Full Error Object:', error);
+            const errorMessage = error.response?.data?.message || error.message || 'Unknown network error';
+            const errorDetails = error.response ? `Status: ${error.response.status}\nData: ${JSON.stringify(error.response.data)}` : 'No response from server (CORS or Network issue)';
+            alert(`Login failed: ${errorMessage}\n\nDetails:\n${errorDetails}`);
         } finally {
             setLoading(false);
         }
