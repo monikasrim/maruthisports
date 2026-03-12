@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fcfcfd] text-slate-950 antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/40;
+  }
+
+  .glass-dark {
+    @apply bg-slate-950/60 backdrop-blur-md border border-white/10;
+  }
+
+  .grad-blue {
+    @apply bg-blue-600;
+  }
+
+  .text-grad {
+    @apply text-blue-600;
+  }
+}

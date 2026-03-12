@@ -1,0 +1,3 @@
+Connected to MongoDB
+Found 14 products
+Done updating images.

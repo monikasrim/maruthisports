@@ -1,0 +1,11 @@
+{
+  "found": true,
+  "user": {
+    "id": "698063333340a4e2fc9ca5bd",
+    "name": "monika",
+    "email": "moni@gmail.com",
+    "role": "user",
+    "hasPassword": true
+  },
+  "passwordMatch": true
+}

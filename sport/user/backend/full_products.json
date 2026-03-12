@@ -1,0 +1,942 @@
+[
+  {
+    "_id": "699f2b9de50c55cb48a67228",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Basketball Hoop",
+    "image": "https://images.unsplash.com/photo-1544919982-b61976f0ba43?q=80&w=800&auto=format&fit=crop",
+    "brand": "Iron Grip",
+    "category": "Basketball",
+    "description": "Engineered for elite performance, the Sky-High Pro Hoop features a heavy-duty breakaway rim and a crystal-clear, shatterproof polycarbonate backboard. The pro-style spring action ensures a consistent bounce and safe dunks, while the weather-resistant plating makes it perfect for both intense indoor training and outdoor play. Includes a high-density base that can be filled with sand or water for ultimate stability during aggressive plays.",
+    "rating": 4.4,
+    "numReviews": 5,
+    "price": 24500,
+    "countInStock": 3,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "The design is sleek and the functionality is flawless.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc43",
+        "createdAt": "2026-03-09T03:42:11.680Z",
+        "updatedAt": "2026-03-09T03:42:11.680Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc44",
+        "createdAt": "2026-03-09T03:42:11.681Z",
+        "updatedAt": "2026-03-09T03:42:11.681Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Excellent build quality and very comfortable to use. 5 stars!",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc45",
+        "createdAt": "2026-03-09T03:42:11.681Z",
+        "updatedAt": "2026-03-09T03:42:11.681Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc46",
+        "createdAt": "2026-03-09T03:42:11.681Z",
+        "updatedAt": "2026-03-09T03:42:11.681Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 5,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc47",
+        "createdAt": "2026-03-09T03:42:11.681Z",
+        "updatedAt": "2026-03-09T03:42:11.681Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.682Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67229",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Kettlebell",
+    "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?q=80&w=800&auto=format&fit=crop",
+    "brand": "Iron Grip",
+    "category": "Gym",
+    "description": "Take your strength training to the next level with our Cast Iron Kettlebells. Machined from a single solid piece of high-grade cast iron, these kettlebells are built to last a lifetime. The wide, ergonomic handle provides a secure grip for both single and double-handed exercises, while the flat base ensures stability during floor-based movements. Powder-coated finish resists chipping and provides a premium feel during snatches, swings, and presses.",
+    "rating": 4.25,
+    "numReviews": 4,
+    "price": 3800,
+    "countInStock": 40,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc49",
+        "createdAt": "2026-03-09T03:42:11.733Z",
+        "updatedAt": "2026-03-09T03:42:11.733Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc4a",
+        "createdAt": "2026-03-09T03:42:11.734Z",
+        "updatedAt": "2026-03-09T03:42:11.734Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 5,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc4b",
+        "createdAt": "2026-03-09T03:42:11.734Z",
+        "updatedAt": "2026-03-09T03:42:11.734Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc4c",
+        "createdAt": "2026-03-09T03:42:11.734Z",
+        "updatedAt": "2026-03-09T03:42:11.734Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.734Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722c",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Tennis Balls",
+    "image": "https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?q=80&w=800&auto=format&fit=crop",
+    "brand": "Vortex",
+    "category": "Tennis",
+    "description": "Experience professional-grade performance with Vortex Pro-Court Tennis Balls. These pressurized balls are crafted with premium wool felt and a specialized rubber core to deliver consistent bounce and exceptional visibility. Designed for all surface types, they maintain their pressure longer than standard balls, making them the choice of competitive athletes. Comes in a vacuum-sealed can of 3 to ensure peak freshness and performance.",
+    "rating": 4.2,
+    "numReviews": 5,
+    "price": 850,
+    "countInStock": 200,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc4e",
+        "createdAt": "2026-03-09T03:42:11.774Z",
+        "updatedAt": "2026-03-09T03:42:11.774Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc4f",
+        "createdAt": "2026-03-09T03:42:11.774Z",
+        "updatedAt": "2026-03-09T03:42:11.774Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc50",
+        "createdAt": "2026-03-09T03:42:11.774Z",
+        "updatedAt": "2026-03-09T03:42:11.774Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 5,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc51",
+        "createdAt": "2026-03-09T03:42:11.775Z",
+        "updatedAt": "2026-03-09T03:42:11.775Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 4,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc52",
+        "createdAt": "2026-03-09T03:42:11.775Z",
+        "updatedAt": "2026-03-09T03:42:11.775Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.775Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67227",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Basketball",
+    "image": "https://images.unsplash.com/photo-1519861531473-9200262188bf?q=80&w=800&auto=format&fit=crop",
+    "brand": "Vortex",
+    "category": "Basketball",
+    "description": "The Zenith Grip Basketball is designed for players who demand precision and control. Featuring a soft-touch composite cover with advanced moisture-wicking technology, it provides an unbeatable grip even during the most intense games. The wide channel design improves shooting mechanics and ball handling, while the high-performance butyl bladder ensures superior air retention and a perfectly balanced bounce on any court surface.",
+    "rating": 4.4,
+    "numReviews": 5,
+    "price": 4200,
+    "countInStock": 25,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "The design is sleek and the functionality is flawless.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc54",
+        "createdAt": "2026-03-09T03:42:11.815Z",
+        "updatedAt": "2026-03-09T03:42:11.815Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Met all my expectations. The grip and performance are top-notch.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc55",
+        "createdAt": "2026-03-09T03:42:11.815Z",
+        "updatedAt": "2026-03-09T03:42:11.815Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Great value for money. Better than many expensive alternatives I've tried.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc56",
+        "createdAt": "2026-03-09T03:42:11.815Z",
+        "updatedAt": "2026-03-09T03:42:11.815Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Great value for money. Better than many expensive alternatives I've tried.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc57",
+        "createdAt": "2026-03-09T03:42:11.815Z",
+        "updatedAt": "2026-03-09T03:42:11.815Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 4,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc58",
+        "createdAt": "2026-03-09T03:42:11.815Z",
+        "updatedAt": "2026-03-09T03:42:11.815Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.815Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722f",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Running Spikes",
+    "image": "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=800&auto=format&fit=crop",
+    "brand": "Titan",
+    "category": "Athletics",
+    "description": "Designed for explosive speed, the Titan Track Spikes are the ultimate weapon for sprinters and middle-distance runners. The ultra-lightweight mesh upper provides maximum breathability and a locked-in fit, while the aggressive 7-spike plate delivers unparalleled traction and energy return. Featuring a responsive foam midsole that absorbs impact without compromising speed. Dominate the track with footwear built for podium finishes.",
+    "rating": 4.5,
+    "numReviews": 4,
+    "price": 6500,
+    "countInStock": 20,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc5a",
+        "createdAt": "2026-03-09T03:42:11.854Z",
+        "updatedAt": "2026-03-09T03:42:11.854Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc5b",
+        "createdAt": "2026-03-09T03:42:11.854Z",
+        "updatedAt": "2026-03-09T03:42:11.854Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc5c",
+        "createdAt": "2026-03-09T03:42:11.854Z",
+        "updatedAt": "2026-03-09T03:42:11.854Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 5,
+        "comment": "Excellent build quality and very comfortable to use. 5 stars!",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc5d",
+        "createdAt": "2026-03-09T03:42:11.854Z",
+        "updatedAt": "2026-03-09T03:42:11.854Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.854Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722d",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Volleyball",
+    "image": "https://images.unsplash.com/photo-1592656094267-764a45160876?q=80&w=800&auto=format&fit=crop",
+    "brand": "Lumina Sports",
+    "category": "Volleyball",
+    "description": "Elevate your game with the Quantum Spike Ball. This professional-grade volleyball features a premium micro-fiber composite cover that feels soft on the hands while providing the durability needed for high-velocity spikes. The 18-panel hand-sewn construction ensures a perfectly aerodynamic flight and consistent bounce. Its vibrant color pattern is designed for tracking rotations even under bright stadium lights.",
+    "rating": 4.75,
+    "numReviews": 4,
+    "price": 2800,
+    "countInStock": 29,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Met all my expectations. The grip and performance are top-notch.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc5f",
+        "createdAt": "2026-03-09T03:42:11.891Z",
+        "updatedAt": "2026-03-09T03:42:11.891Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc60",
+        "createdAt": "2026-03-09T03:42:11.891Z",
+        "updatedAt": "2026-03-09T03:42:11.891Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 5,
+        "comment": "Excellent build quality and very comfortable to use. 5 stars!",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc61",
+        "createdAt": "2026-03-09T03:42:11.891Z",
+        "updatedAt": "2026-03-09T03:42:11.891Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 5,
+        "comment": "The design is sleek and the functionality is flawless.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc62",
+        "createdAt": "2026-03-09T03:42:11.891Z",
+        "updatedAt": "2026-03-09T03:42:11.891Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.891Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67225",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Soccer Ball",
+    "image": "https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop",
+    "brand": "Titan",
+    "category": "Football",
+    "description": "The Vortex Elite Match Ball is a FIFA Quality Pro certified ball designed for the highest level of competition. Its thermally bonded, seamless surface ensures a predictable trajectory, better touch, and minimal water intake. The high-rebound butyl bladder and 12-panel design provider superior air retention and structural integrity, allowing for pinpoint accuracy during long-range passes and powerful strikes.",
+    "rating": 4.333333333333333,
+    "numReviews": 3,
+    "price": 4500,
+    "countInStock": 20,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc64",
+        "createdAt": "2026-03-09T03:42:11.928Z",
+        "updatedAt": "2026-03-09T03:42:11.928Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc65",
+        "createdAt": "2026-03-09T03:42:11.928Z",
+        "updatedAt": "2026-03-09T03:42:11.928Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc66",
+        "createdAt": "2026-03-09T03:42:11.928Z",
+        "updatedAt": "2026-03-09T03:42:11.928Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:11.928Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67223",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Cricket Bat",
+    "image": "https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=800&auto=format&fit=crop",
+    "brand": "Maruthi Elite",
+    "category": "Cricket",
+    "description": "Crafted from elite Grade 1 English Willow, the Maruthi Elite Bat is the pinnacle of cricket engineering. Hand-selected for its straight grains and massive sweet spot, this bat offers incredible power-to-weight ratio. The Sarawak Cane handle features multiple shock-absorbers for superior control and comfort during high-intensity strokes. Pre-knocked and ready for competitive play, it's the weapon of choice for top-order batsmen.",
+    "rating": 4.6,
+    "numReviews": 5,
+    "price": 18500,
+    "countInStock": 5,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc68",
+        "createdAt": "2026-03-09T03:42:11.967Z",
+        "updatedAt": "2026-03-09T03:42:11.967Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "The design is sleek and the functionality is flawless.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc69",
+        "createdAt": "2026-03-09T03:42:11.967Z",
+        "updatedAt": "2026-03-09T03:42:11.967Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 5,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc6a",
+        "createdAt": "2026-03-09T03:42:11.967Z",
+        "updatedAt": "2026-03-09T03:42:11.967Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 5,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc6b",
+        "createdAt": "2026-03-09T03:42:11.967Z",
+        "updatedAt": "2026-03-09T03:42:11.967Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 4,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4193af7190c2fd0cdc6c",
+        "createdAt": "2026-03-09T03:42:11.967Z",
+        "updatedAt": "2026-03-09T03:42:11.967Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.441Z",
+    "updatedAt": "2026-03-09T03:42:11.967Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67224",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Cricket Ball",
+    "image": "https://plus.unsplash.com/premium_photo-1679933610996-cf3f5a285d82?q=80&w=800&auto=format&fit=crop",
+    "brand": "Speedster",
+    "category": "Cricket",
+    "description": "The Speedster Test Grade Leather Ball is meticulously hand-stitched using premium alum-tanned leather. Designed for 80+ overs of high-stakes play, it maintains its shape and hardness even in taxing sessions. The high-quality Portuguese cork core provides a consistent bounce, while the pronounced seam allows for significant swing and spin. Used in top-tier club and professional matches globally.",
+    "rating": 4.5,
+    "numReviews": 4,
+    "price": 1200,
+    "countInStock": 100,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc6e",
+        "createdAt": "2026-03-09T03:42:12.007Z",
+        "updatedAt": "2026-03-09T03:42:12.007Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc6f",
+        "createdAt": "2026-03-09T03:42:12.007Z",
+        "updatedAt": "2026-03-09T03:42:12.007Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Great value for money. Better than many expensive alternatives I've tried.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc70",
+        "createdAt": "2026-03-09T03:42:12.007Z",
+        "updatedAt": "2026-03-09T03:42:12.007Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Excellent build quality and very comfortable to use. 5 stars!",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc71",
+        "createdAt": "2026-03-09T03:42:12.007Z",
+        "updatedAt": "2026-03-09T03:42:12.007Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.008Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722e",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Badminton Racket",
+    "image": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=800&auto=format&fit=crop",
+    "brand": "NanoTech",
+    "category": "Badminton",
+    "description": "The NanoTech Strike Racket is engineered for players who crave speed and sharp offensive play. Utilizing a high-modulus graphite frame with NanoCarbon technology, it's incredibly stiff and lightweight. The aerodynamic frame design reduces air resistance, allowing for lightning-fast racquet-head speed. Its head-heavy balance provides the crushing power needed for unreturnable smashes, while the slim shaft ensures precise control.",
+    "rating": 4.666666666666667,
+    "numReviews": 3,
+    "price": 4900,
+    "countInStock": 15,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "Met all my expectations. The grip and performance are top-notch.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc73",
+        "createdAt": "2026-03-09T03:42:12.045Z",
+        "updatedAt": "2026-03-09T03:42:12.045Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Met all my expectations. The grip and performance are top-notch.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc74",
+        "createdAt": "2026-03-09T03:42:12.045Z",
+        "updatedAt": "2026-03-09T03:42:12.045Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 5,
+        "comment": "Great value for money. Better than many expensive alternatives I've tried.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc75",
+        "createdAt": "2026-03-09T03:42:12.045Z",
+        "updatedAt": "2026-03-09T03:42:12.045Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.046Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67226",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Football Boots",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop",
+    "brand": "AeroStream",
+    "category": "Football",
+    "description": "Unleash your agility with AeroStream Phantom Boots. These lightweight boots feature a synthetic micro-textured upper for enhanced ball control at high speeds. The multi-stud configuration provides exceptional traction on both natural and artificial turf, allowing for quick cuts and explosive acceleration. The cushioned sock-liner ensures comfort for the full 90 minutes, making them essential for any dynamic playmaker.",
+    "rating": 4.6,
+    "numReviews": 5,
+    "price": 8900,
+    "countInStock": 15,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "Excellent build quality and very comfortable to use. 5 stars!",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc77",
+        "createdAt": "2026-03-09T03:42:12.082Z",
+        "updatedAt": "2026-03-09T03:42:12.082Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc78",
+        "createdAt": "2026-03-09T03:42:12.082Z",
+        "updatedAt": "2026-03-09T03:42:12.082Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc79",
+        "createdAt": "2026-03-09T03:42:12.082Z",
+        "updatedAt": "2026-03-09T03:42:12.082Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Great value for money. Better than many expensive alternatives I've tried.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc7a",
+        "createdAt": "2026-03-09T03:42:12.082Z",
+        "updatedAt": "2026-03-09T03:42:12.082Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 5,
+        "comment": "Met all my expectations. The grip and performance are top-notch.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc7b",
+        "createdAt": "2026-03-09T03:42:12.082Z",
+        "updatedAt": "2026-03-09T03:42:12.082Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.082Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722a",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Dumbbell Set",
+    "image": "https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=800&auto=format&fit=crop",
+    "brand": "Titan",
+    "category": "Gym",
+    "description": "Maximize your home gym efficiency with the Titan Adjustable Dumbbell Set. Replacing multiple pairs of weights, this space-saving set allows you to adjust the load in seconds with a simple dial mechanism. Crafted from high-durability steel and coated in high-impact plastic for quiet performance. Perfect for everything from light lateral raises to heavy chest presses. Includes a custom stand for easy storage and access.",
+    "rating": 4.2,
+    "numReviews": 5,
+    "price": 15600,
+    "countInStock": 12,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc7d",
+        "createdAt": "2026-03-09T03:42:12.123Z",
+        "updatedAt": "2026-03-09T03:42:12.123Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 5,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc7e",
+        "createdAt": "2026-03-09T03:42:12.123Z",
+        "updatedAt": "2026-03-09T03:42:12.123Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc7f",
+        "createdAt": "2026-03-09T03:42:12.123Z",
+        "updatedAt": "2026-03-09T03:42:12.123Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc80",
+        "createdAt": "2026-03-09T03:42:12.124Z",
+        "updatedAt": "2026-03-09T03:42:12.124Z"
+      },
+      {
+        "name": "Varshu",
+        "rating": 4,
+        "comment": "Perfect for competitive play. Really helps in improving my technique.",
+        "user": "6982cbab460aa77a8f71c32c",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc81",
+        "createdAt": "2026-03-09T03:42:12.124Z",
+        "updatedAt": "2026-03-09T03:42:12.124Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.124Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a67230",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Swimming Goggles",
+    "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?q=80&w=800&auto=format&fit=crop",
+    "brand": "HydroFit",
+    "category": "Swimming",
+    "description": "Engineered for clarity and comfort, HydroFit Goggles feature high-definition peripheral lenses with advanced anti-fog treatment. The soft silicone gaskets provide a leak-proof seal without causing excessive pressure on the eye sockets. The split-strap design ensures a secure fit during racing starts and turns. 100% UV protection makes them suitable for both indoor pools and open water training.",
+    "rating": 4.333333333333333,
+    "numReviews": 3,
+    "price": 1800,
+    "countInStock": 60,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 5,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc83",
+        "createdAt": "2026-03-09T03:42:12.161Z",
+        "updatedAt": "2026-03-09T03:42:12.161Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Highly recommended for serious athletes. The durability is impressive.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc84",
+        "createdAt": "2026-03-09T03:42:12.161Z",
+        "updatedAt": "2026-03-09T03:42:12.161Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "Exactly as described. Fast shipping and premium packaging.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc85",
+        "createdAt": "2026-03-09T03:42:12.161Z",
+        "updatedAt": "2026-03-09T03:42:12.161Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.161Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  },
+  {
+    "_id": "699f2b9de50c55cb48a6722b",
+    "user": "698063333340a4e2fc9ca5bd",
+    "name": "Tennis Racket",
+    "image": "https://images.unsplash.com/photo-1617152060867-a026c44919bc?w=800&q=80",
+    "brand": "AeroStream",
+    "category": "Tennis",
+    "description": "The AeroStream Graphite Racket is built for players who want to dominate the baseline with power and spin. The high-modulus graphite construction provides exceptional frame stability, while the open string pattern allows for massive topspin. The shock-dampening technology in the handle reduces fatigue during long rallies. A perfectly balanced frame that offers a blend of explosive power and surgical precision.",
+    "rating": 4,
+    "numReviews": 4,
+    "price": 14500,
+    "countInStock": 8,
+    "reviews": [
+      {
+        "name": "monika",
+        "rating": 4,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "698063333340a4e2fc9ca5bd",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc87",
+        "createdAt": "2026-03-09T03:42:12.198Z",
+        "updatedAt": "2026-03-09T03:42:12.198Z"
+      },
+      {
+        "name": "nivi",
+        "rating": 4,
+        "comment": "Absolutely fantastic quality! Use it daily for my training sessions.",
+        "user": "698064e23340a4e2fc9ca5c3",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc88",
+        "createdAt": "2026-03-09T03:42:12.198Z",
+        "updatedAt": "2026-03-09T03:42:12.198Z"
+      },
+      {
+        "name": "kohi",
+        "rating": 4,
+        "comment": "The performance is elite level. I've noticed a real difference in my game.",
+        "user": "69806beba71123e7b524b64e",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc89",
+        "createdAt": "2026-03-09T03:42:12.198Z",
+        "updatedAt": "2026-03-09T03:42:12.198Z"
+      },
+      {
+        "name": "ishu",
+        "rating": 4,
+        "comment": "Strong and durable. It's survived some very intense sessions.",
+        "user": "69806d91cf445ad2c697309f",
+        "images": [],
+        "_id": "69ae4194af7190c2fd0cdc8a",
+        "createdAt": "2026-03-09T03:42:12.198Z",
+        "updatedAt": "2026-03-09T03:42:12.198Z"
+      }
+    ],
+    "__v": 1,
+    "createdAt": "2026-02-25T17:04:29.442Z",
+    "updatedAt": "2026-03-09T03:42:12.199Z",
+    "colors": [
+      "Default"
+    ],
+    "sizes": [
+      "Standard",
+      "Pro"
+    ]
+  }
+]

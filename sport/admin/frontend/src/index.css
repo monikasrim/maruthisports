@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.premium-shadow {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+.gradient-blue {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+}
+
+.gradient-purple {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+}
+
+.gradient-pink {
+    background: linear-gradient(135deg, #db2777, #be185d);
+}
+
+.gradient-orange {
+    background: linear-gradient(135deg, #ea580c, #c2410c);
+}
