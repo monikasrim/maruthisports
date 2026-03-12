@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import AuthContext from '../../context/AuthContext';
 import { FaTrash, FaEdit, FaUserCircle, FaHistory } from 'react-icons/fa';
 
@@ -18,7 +19,7 @@ const Users = () => {
                     },
                 };
                 // Port 5001 as confirmed earlier
-                const { data } = await axios.get('http://localhost:5001/api/users', config);
+                const { data } = await axios.get(`${API_URL}/api/users`, config);
                 setUsers(data);
             } catch (error) {
                 console.error('Error fetching users:', error);

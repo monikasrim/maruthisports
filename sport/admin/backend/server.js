@@ -12,7 +12,10 @@ connectDB();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['https://maruthisports-admin-dcu0ujc1r-monikasrims-projects.vercel.app', 'http://localhost:5173'],
+  credentials: true
+}));
 
 // Routes
 app.use('/api/users', require('./routes/authRoutes'));

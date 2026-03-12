@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 
 const AuthContext = createContext();
 
@@ -18,7 +19,7 @@ export const AuthProvider = ({ children }) => {
                             Authorization: `Bearer ${token}`,
                         },
                     };
-                    const { data } = await axios.get('http://localhost:5001/api/users/me', config);
+                    const { data } = await axios.get(`${API_URL}/api/users/me`, config);
                     setUser({ ...data, token });
                 } catch (error) {
                     console.error('User fetch failed', error);
@@ -32,13 +33,13 @@ export const AuthProvider = ({ children }) => {
     }, []);
 
     const login = async (email, password) => {
-        const { data } = await axios.post('http://localhost:5001/api/users/login', { email, password });
+        const { data } = await axios.post(`${API_URL}/api/users/login`, { email, password });
         localStorage.setItem('token', data.token);
         setUser(data);
     };
 
     const register = async (name, email, password) => {
-        const { data } = await axios.post('http://localhost:5001/api/users', { name, email, password, role: 'admin' });
+        const { data } = await axios.post(`${API_URL}/api/users`, { name, email, password, role: 'admin' });
         localStorage.setItem('token', data.token);
         setUser(data);
     };

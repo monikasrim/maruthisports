@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { useNavigate } from 'react-router-dom';
 import {
     AreaChart,
@@ -56,7 +57,7 @@ const DashboardHome = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                const { data } = await axios.get('http://localhost:5001/api/stats', config);
+                const { data } = await axios.get(`${API_URL}/api/stats`, config);
                 setStats(data);
             } catch (error) {
                 console.error('Error fetching stats:', error);
@@ -278,7 +279,7 @@ const DashboardHome = () => {
                                     <div key={prod._id} className="flex items-center space-x-3 p-2 hover:bg-gray-50 rounded-lg transition-all">
                                         <div className="w-12 h-12 rounded-lg bg-gray-100 flex-shrink-0">
                                             <img
-                                                src={`http://localhost:5001${prod.image}`}
+                                                src={`${API_URL}${prod.image}`}
                                                 className="w-full h-full object-cover rounded-lg shadow-sm"
                                                 alt=""
                                                 onError={(e) => { e.target.src = 'https://placehold.co/100'; }}

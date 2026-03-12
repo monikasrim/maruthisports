@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+import API_URL from '../../api';
 import { FaCheck, FaTruck, FaClock, FaEye } from 'react-icons/fa';
 
 const Orders = () => {
@@ -16,7 +17,7 @@ const Orders = () => {
             const config = {
                 headers: { Authorization: `Bearer ${token}` },
             };
-            const { data } = await axios.get('http://localhost:5001/api/orders', config);
+            const { data } = await axios.get(`${API_URL}/api/orders`, config);
             setOrders(data);
         } catch (error) {
             console.error('Error fetching orders:', error);
@@ -45,7 +46,7 @@ const Orders = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                await axios.put(`http://localhost:5001/api/orders/${id}/deliver`, {}, config);
+                await axios.put(`${API_URL}/api/orders/${id}/deliver`, {}, config);
                 fetchOrders();
             } catch (error) {
                 console.error('Error updating delivery:', error);
@@ -62,7 +63,7 @@ const Orders = () => {
                     Authorization: `Bearer ${token}`,
                 },
             };
-            await axios.put(`http://localhost:5001/api/orders/${id}/status`, { status }, config);
+            await axios.put(`${API_URL}/api/orders/${id}/status`, { status }, config);
             fetchOrders();
         } catch (error) {
             console.error('Error updating status:', error);

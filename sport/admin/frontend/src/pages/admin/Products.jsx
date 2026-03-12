@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { FaPlus, FaEdit, FaTrash, FaBoxOpen } from 'react-icons/fa';
 
 const Products = () => {
@@ -23,7 +24,7 @@ const Products = () => {
 
     const fetchProducts = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5001/api/products');
+            const { data } = await axios.get(`${API_URL}/api/products`);
             setProducts(data);
         } catch (error) {
             console.error('Error fetching products:', error);
@@ -53,7 +54,7 @@ const Products = () => {
                 },
             };
 
-            const { data } = await axios.post('http://localhost:5001/api/upload', formDataUpload, config);
+            const { data } = await axios.post(`${API_URL}/api/upload`, formDataUpload, config);
 
             setFormData({ ...formData, image: data });
             setUploading(false);
@@ -76,7 +77,7 @@ const Products = () => {
                     Authorization: `Bearer ${token}`,
                 },
             };
-            await axios.post('http://localhost:5001/api/products', formData, config);
+            await axios.post(`${API_URL}/api/products`, formData, config);
 
             setNotification({ type: 'success', message: 'Product created successfully!' });
 
@@ -115,7 +116,7 @@ const Products = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                await axios.delete(`http://localhost:5001/api/products/${id}`, config);
+                await axios.delete(`${API_URL}/api/products/${id}`, config);
                 fetchProducts();
             } catch (error) {
                 alert('Error deleting product');
@@ -161,7 +162,7 @@ const Products = () => {
                                 <div className="h-48 bg-gray-100 relative overflow-hidden">
                                     {/* Image Placeholder or Actual Image */}
                                     <img
-                                        src={`http://localhost:5001${product.image ? product.image.replace(/\\/g, '/') : ''}`}
+                                        src={`${API_URL}${product.image ? product.image.replace(/\\/g, '/') : ''}`}
                                         alt={product.name}
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                         onError={(e) => { e.target.src = 'https://placehold.co/400x300?text=No+Image' }}

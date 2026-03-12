@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { FaEdit, FaBox, FaArrowUp, FaArrowDown, FaExclamationTriangle } from 'react-icons/fa';
 
 const Inventory = () => {
@@ -9,7 +10,7 @@ const Inventory = () => {
 
     const fetchProducts = async () => {
         try {
-            const { data } = await axios.get('http://localhost:5001/api/products');
+            const { data } = await axios.get(`${API_URL}/api/products`);
             setProducts(data);
         } catch (error) {
             console.error('Error fetching products:', error);
@@ -32,7 +33,7 @@ const Inventory = () => {
                     Authorization: `Bearer ${token}`,
                 },
             };
-            await axios.put(`http://localhost:5001/api/products/${id}/stock`, { countInStock: newStock }, config);
+            await axios.put(`${API_URL}/api/products/${id}/stock`, { countInStock: newStock }, config);
             fetchProducts();
         } catch (error) {
             console.error('Error updating stock:', error);
@@ -99,7 +100,7 @@ const Inventory = () => {
                                         <div className="flex items-center space-x-3">
                                             <div className="w-10 h-10 rounded-lg bg-gray-100 flex-shrink-0 overflow-hidden">
                                                 <img
-                                                    src={`http://localhost:5001${product.image}`}
+                                                    src={`${API_URL}${product.image}`}
                                                     alt=""
                                                     className="w-full h-full object-cover"
                                                     onError={(e) => { e.target.src = 'https://placehold.co/40x40?text=PS' }}
