@@ -19,7 +19,7 @@ const Login = () => {
             // For now, let's just go home, and App will redirect if admin.
             navigate('/');
         } catch (error) {
-            alert('Login failed');
+            alert(error.response?.data?.message || 'Login failed. Please check your connection and try again.');
         }
     };
 
