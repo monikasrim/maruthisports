@@ -1,5 +1,6 @@
 import { useState, useContext } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 import { useNavigate } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import toast from 'react-hot-toast';
@@ -34,7 +35,7 @@ const AddProduct = () => {
         setLoading(true);
         try {
             const token = localStorage.getItem('token');
-            await axios.post('http://localhost:5000/api/products', productData, {
+            await axios.post(`${API_URL}/api/products`, productData, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             toast.success('Product added successfully!');

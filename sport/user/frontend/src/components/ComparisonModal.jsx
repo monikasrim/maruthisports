@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaTimes, FaBalanceScale, FaTrash } from 'react-icons/fa';
+import API_URL from '../api';
 
 const ComparisonModal = ({ products, onRemove, onClose }) => {
     if (products.length === 0) return null;
@@ -7,7 +8,7 @@ const ComparisonModal = ({ products, onRemove, onClose }) => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image.replace(/\\/g, '/')}`;
+        return `${API_URL}${image.replace(/\\/g, '/')}`;
     };
 
     return (

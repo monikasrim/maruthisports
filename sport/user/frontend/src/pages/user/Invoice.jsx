@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
+import API_URL from '../../api';
 import { FaPrint, FaArrowLeft, FaCheckCircle, FaDownload } from 'react-icons/fa';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
@@ -15,7 +16,7 @@ const Invoice = () => {
             try {
                 const token = localStorage.getItem('token');
                 const config = { headers: { Authorization: `Bearer ${token}` } };
-                const { data } = await axios.get(`http://localhost:5000/api/orders/${id}`, config);
+                const { data } = await axios.get(`${API_URL}/api/orders/${id}`, config);
                 setOrder(data);
             } catch (error) {
                 console.error('Error fetching order for invoice:', error);
@@ -158,7 +159,7 @@ const Invoice = () => {
                                     <div className="flex items-center gap-4">
                                         <div className="w-10 h-10 bg-slate-50 rounded-lg flex items-center justify-center p-2">
                                             <img
-                                                src={item.image.startsWith('http') ? item.image : `http://localhost:5000${item.image}`}
+                                                src={item.image.startsWith('http') ? item.image : `${API_URL}${item.image}`}
                                                 crossOrigin="anonymous"
                                                 className="max-w-full max-h-full object-contain"
                                                 alt=""

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 import { Link } from 'react-router-dom';
 import {
     FaArrowRight,
@@ -81,7 +82,7 @@ const Home = () => {
     useEffect(() => {
         const fetchTopProducts = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/products/top');
+                const { data } = await axios.get(`${API_URL}/api/products/top`);
                 setTopProducts(data);
             } catch (error) {
                 console.error('Error fetching top products:', error);
@@ -390,7 +391,7 @@ const Home = () => {
                                     {/* Product Image */}
                                     <div className="relative bg-slate-50 p-6 flex items-center justify-center" style={{ height: '200px' }}>
                                         <img
-                                            src={prod.image?.startsWith('http') ? prod.image : `http://localhost:5000${prod.image}`}
+                                            src={prod.image?.startsWith('http') ? prod.image : `${API_URL}${prod.image}`}
                                             alt={prod.name}
                                             className="max-h-full max-w-full object-contain"
                                         />

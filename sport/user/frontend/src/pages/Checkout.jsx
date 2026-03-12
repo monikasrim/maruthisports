@@ -16,6 +16,7 @@ import {
 import { useCart } from '../context/CartContext';
 import AuthContext from '../context/AuthContext';
 import axios from 'axios';
+import API_URL from '../api';
 import toast from 'react-hot-toast';
 import { FaQrcode } from 'react-icons/fa';
 
@@ -56,7 +57,7 @@ const Checkout = () => {
                     Authorization: `Bearer ${token}`
                 }
             };
-            const { data } = await axios.post('http://localhost:5000/api/coupons/validate', { code: couponCode }, config);
+            const { data } = await axios.post(`${API_URL}/api/coupons/validate`, { code: couponCode }, config);
             setCoupon(data);
             toast.success('Coupon Applied!');
         } catch (error) {
@@ -114,7 +115,7 @@ const Checkout = () => {
                 }
             };
 
-            const { data: createdOrder } = await axios.post('http://localhost:5000/api/orders', orderData, config);
+            const { data: createdOrder } = await axios.post(`${API_URL}/api/orders`, orderData, config);
             setOrderId(createdOrder._id);
             clearCart();
             setStep(4);
@@ -139,7 +140,7 @@ const Checkout = () => {
 
             // 1. Create Order on Backend (User Port 5000)
             const { data: orderData } = await axios.post(
-                "http://localhost:5000/api/payments/order",
+                `${API_URL}/api/payments/order`,
                 { amount: finalTotal },
                 config
             );
@@ -154,7 +155,7 @@ const Checkout = () => {
                 handler: async (response) => {
                     try {
                         const { data } = await axios.post(
-                            "http://localhost:5000/api/payments/verify",
+                            `${API_URL}/api/payments/verify`,
                             response,
                             config
                         );
@@ -346,7 +347,7 @@ const Checkout = () => {
                                                 <div className="flex items-center gap-6">
                                                     <div className="w-16 h-16 bg-white rounded-2xl p-2 border border-slate-100 flex items-center justify-center">
                                                         <img
-                                                            src={item.image.startsWith('http') ? item.image : `http://localhost:5000${item.image.replace(/\\/g, '/')}`}
+                                                            src={item.image.startsWith('http') ? item.image : `${API_URL}${item.image.replace(/\\/g, '/')}`}
                                                             alt={item.name}
                                                             className="w-full h-full object-contain"
                                                         />

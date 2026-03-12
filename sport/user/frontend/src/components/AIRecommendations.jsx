@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 import { Link } from 'react-router-dom';
 import { FaBolt, FaStar, FaShoppingCart } from 'react-icons/fa';
 import { useCart } from '../context/CartContext';
@@ -13,13 +14,13 @@ const AIRecommendations = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image}`;
+        return `${API_URL}${image}`;
     };
 
     useEffect(() => {
         const fetchRecommendations = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/products');
+                const { data } = await axios.get(`${API_URL}/api/products`);
                 const viewed = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
                 const viewedCategories = viewed.map(p => p.category);
 

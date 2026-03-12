@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 import { Link, useLocation } from 'react-router-dom';
 import {
     FaSearch,
@@ -34,7 +35,7 @@ const Shop = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image.startsWith('/') ? image : '/' + image}`;
+        return `${API_URL}${image.startsWith('/') ? image : '/' + image}`;
     };
 
     const [products, setProducts] = useState([]);
@@ -60,7 +61,7 @@ const Shop = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const { data } = await axios.get('http://localhost:5000/api/products');
+                const { data } = await axios.get(`${API_URL}/api/products`);
                 setProducts(data);
                 // Dynamically set max price if needed
                 if (data.length > 0) {
@@ -331,7 +332,7 @@ const Shop = () => {
                                                             return;
                                                         }
                                                         const config = { headers: { Authorization: `Bearer ${token}` } };
-                                                        await axios.post(`http://localhost:5000/api/wishlist/${product._id}`, {}, config);
+                                                        await axios.post(`${API_URL}/api/wishlist/${product._id}`, {}, config);
                                                         toast.success('Added to Wishlist');
                                                     } catch (err) {
                                                         toast.error(err.response?.data?.message || 'Error adding to wishlist');

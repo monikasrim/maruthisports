@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import API_URL from '../api';
 import {
     FaStar,
     FaArrowLeft,
@@ -25,7 +26,7 @@ const ProductDetails = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image.replace(/\\/g, '/')}`;
+        return `${API_URL}${image.replace(/\\/g, '/')}`;
     };
 
     const [rating, setRating] = useState(5);
@@ -43,7 +44,7 @@ const ProductDetails = () => {
                 return;
             }
             const config = { headers: { Authorization: `Bearer ${token}` } };
-            await axios.post(`http://localhost:5000/api/wishlist/${id}`, {}, config);
+            await axios.post(`${API_URL}/api/wishlist/${id}`, {}, config);
             toast.success('Added to Wishlist');
         } catch (err) {
             toast.error(err.response?.data?.message || 'Error adding to wishlist');
@@ -55,7 +56,7 @@ const ProductDetails = () => {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
+                const { data } = await axios.get(`${API_URL}/api/products/${id}`);
                 setProduct(data);
                 setLoading(false);
             } catch (error) {
@@ -76,7 +77,7 @@ const ProductDetails = () => {
             const config = {
                 headers: { 'Content-Type': 'multipart/form-data' },
             };
-            const { data } = await axios.post('http://localhost:5000/api/upload', formData, config);
+            const { data } = await axios.post(`${API_URL}/api/upload`, formData, config);
             setReviewImages([...reviewImages, data]);
             setUploading(false);
         } catch (error) {
@@ -97,7 +98,7 @@ const ProductDetails = () => {
                 },
             };
             await axios.post(
-                `http://localhost:5000/api/products/${id}/reviews`,
+                `${API_URL}/api/products/${id}/reviews`,
                 { rating, comment, images: reviewImages },
                 config
             );
@@ -106,7 +107,7 @@ const ProductDetails = () => {
             setComment('');
             setReviewImages([]);
             // Refresh product data
-            const { data } = await axios.get(`http://localhost:5000/api/products/${id}`);
+            const { data } = await axios.get(`${API_URL}/api/products/${id}`);
             setProduct(data);
         } catch (error) {
             toast.error(error.response?.data?.message || 'Error submitting review');
@@ -139,7 +140,7 @@ const ProductDetails = () => {
                                 alt={product.name}
                                 onError={(e) => {
                                     if (!product.image?.startsWith('http')) {
-                                        e.target.src = 'http://localhost:5000/admin-uploads' + product.image?.replace('/uploads', '');
+                                        e.target.src = `${API_URL}/admin-uploads` + product.image?.replace('/uploads', '');
                                     } else {
                                         e.target.src = 'https://placehold.co/600x600?text=' + encodeURIComponent(product.name);
                                     }
@@ -263,7 +264,7 @@ const ProductDetails = () => {
                                         </label>
                                         {reviewImages.map((img, idx) => (
                                             <div key={idx} className="relative w-16 h-16 rounded-2xl overflow-hidden border border-slate-100">
-                                                <img src={`http://localhost:5000${img.replace(/\\/g, '/')}`} className="w-full h-full object-cover" alt="" />
+                                                                <img src={`${API_URL}${img.replace(/\\/g, '/')}`} className="w-full h-full object-cover" alt="" />
                                                 <button
                                                     type="button"
                                                     onClick={() => setReviewImages(reviewImages.filter((_, i) => i !== idx))}
@@ -351,7 +352,7 @@ const ProductDetails = () => {
                                                     <div className="flex flex-wrap gap-4 mb-8">
                                                         {review.images.map((img, i) => (
                                                             <div key={i} className="relative w-28 h-28 rounded-3xl overflow-hidden border border-slate-100 cursor-pointer shadow-md hover:shadow-xl transition-all hover:scale-105 duration-300">
-                                                                <img src={`http://localhost:5000${img.replace(/\\/g, '/')}`} className="w-full h-full object-cover" alt="" />
+                                                                <img src={`${API_URL}${img.replace(/\\/g, '/')}`} className="w-full h-full object-cover" alt="" />
                                                             </div>
                                                         ))}
                                                     </div>

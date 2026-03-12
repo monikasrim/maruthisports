@@ -1,6 +1,7 @@
 // FIXED BY ANTIGRAVITY - User Dashboard Integration
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaTrash, FaShoppingBag } from 'react-icons/fa';
 import AuthContext from '../../context/AuthContext';
@@ -15,7 +16,7 @@ const Wishlist = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image.replace(/\\/g, '/')}`;
+        return `${API_URL}${image.replace(/\\/g, '/')}`;
     };
 
     const fetchWishlist = async () => {
@@ -25,7 +26,7 @@ const Wishlist = () => {
                     Authorization: `Bearer ${user.token}`,
                 },
             };
-            const { data } = await axios.get('http://localhost:5000/api/wishlist', config);
+            const { data } = await axios.get(`${API_URL}/api/wishlist`, config);
             setWishlist(data.products || []);
         } catch (error) {
             console.error('Error fetching wishlist:', error);
@@ -47,7 +48,7 @@ const Wishlist = () => {
                     Authorization: `Bearer ${user.token}`,
                 },
             };
-            await axios.delete(`http://localhost:5000/api/wishlist/${id}`, config);
+            await axios.delete(`${API_URL}/api/wishlist/${id}`, config);
             setWishlist(wishlist.filter((item) => item._id !== id));
             toast.success('Removed from Wishlist');
         } catch (error) {

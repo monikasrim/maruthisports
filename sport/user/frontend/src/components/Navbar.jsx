@@ -3,6 +3,7 @@ import { FaShoppingCart, FaUser, FaHistory, FaSignOutAlt, FaBell, FaCheckCircle,
 import { useCart } from '../context/CartContext';
 import { useContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../api';
 import AuthContext from '../context/AuthContext';
 import logo from '../assets/logo.png';
 
@@ -19,7 +20,7 @@ const Navbar = () => {
             if (user) {
                 try {
                     const token = localStorage.getItem('token');
-                    const { data } = await axios.get('http://localhost:5000/api/notifications', {
+                    const { data } = await axios.get(`${API_URL}/api/notifications`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setNotifications(data);
@@ -33,7 +34,7 @@ const Navbar = () => {
             if (user) {
                 try {
                     const token = localStorage.getItem('token');
-                    const { data } = await axios.get('http://localhost:5000/api/wishlist', {
+                    const { data } = await axios.get(`${API_URL}/api/wishlist`, {
                         headers: { Authorization: `Bearer ${token}` }
                     });
                     setWishlistCount(data.products?.length || 0);
@@ -55,7 +56,7 @@ const Navbar = () => {
     const markRead = async (id) => {
         try {
             const token = localStorage.getItem('token');
-            await axios.put(`http://localhost:5000/api/notifications/${id}`, {}, {
+            await axios.put(`${API_URL}/api/notifications/${id}`, {}, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             setNotifications(notifications.map(n => n._id === id ? { ...n, isRead: true } : n));

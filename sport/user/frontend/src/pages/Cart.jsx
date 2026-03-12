@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import API_URL from '../api';
 import {
     FaTrash,
     FaPlus,
@@ -22,7 +23,7 @@ const Cart = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image.replace(/\\/g, '/')}`;
+        return `${API_URL}${item.image.replace(/\\/g, '/')}`;
     };
 
     const shippingPrice = cartTotalPrice > 5000 ? 0 : 250;

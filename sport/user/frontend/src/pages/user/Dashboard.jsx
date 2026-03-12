@@ -1,5 +1,6 @@
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { Link } from 'react-router-dom';
 import AuthContext from '../../context/AuthContext';
 import { FaBolt, FaHistory, FaHeart, FaArrowRight, FaTrophy, FaFire } from 'react-icons/fa';
@@ -21,8 +22,8 @@ const Dashboard = () => {
                 const config = { headers: { Authorization: `Bearer ${token}` } };
 
                 const [ordersRes, wishlistRes] = await Promise.all([
-                    axios.get('http://localhost:5000/api/orders/mine', config),
-                    axios.get('http://localhost:5000/api/wishlist', config)
+                    axios.get(`${API_URL}/api/orders/mine`, config),
+                    axios.get(`${API_URL}/api/wishlist`, config)
                 ]);
 
                 setStats({

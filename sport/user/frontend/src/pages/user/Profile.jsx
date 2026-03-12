@@ -1,6 +1,7 @@
 // FIXED BY ANTIGRAVITY - User Dashboard Integration
 import { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import AuthContext from '../../context/AuthContext';
 import toast from 'react-hot-toast';
 import { FaUser, FaEnvelope, FaLock, FaSave, FaCamera } from 'react-icons/fa';
@@ -49,7 +50,7 @@ const Profile = () => {
                 },
             };
 
-            const { data } = await axios.post('http://localhost:5000/api/upload', formData, config);
+            const { data } = await axios.post(`${API_URL}/api/upload`, formData, config);
             setImage(data);
             setUploading(false);
             toast.success('Image Uploaded');
@@ -79,7 +80,7 @@ const Profile = () => {
             };
 
             const { data } = await axios.put(
-                'http://localhost:5000/api/users/profile',
+                `${API_URL}/api/users/profile`,
                 { name, email, password, image, address, city, state, postalCode, country, phoneNumber },
                 config
             );
@@ -110,7 +111,7 @@ const Profile = () => {
                         <div className="relative inline-block">
                             <div className="w-32 h-32 bg-blue-600 rounded-[2.5rem] flex items-center justify-center text-white text-5xl font-black uppercase shadow-2xl shadow-blue-600/30 overflow-hidden">
                                 {image ? (
-                                    <img src={`http://localhost:5000${image.replace(/\\/g, '/')}`} alt={user?.name} className="w-full h-full object-cover" />
+                                    <img src={`${API_URL}${image.replace(/\\/g, '/')}`} alt={user?.name} className="w-full h-full object-cover" />
                                 ) : (
                                     user?.name?.charAt(0)
                                 )}

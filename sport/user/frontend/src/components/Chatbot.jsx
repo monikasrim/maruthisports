@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { FaComments, FaTimes, FaPaperPlane, FaRobot, FaUser, FaCircle, FaBox } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import axios from 'axios';
+import API_URL from '../api';
 import { Link } from 'react-router-dom';
 
 const Chatbot = () => {
@@ -35,7 +36,7 @@ const Chatbot = () => {
                 }
             };
 
-            const { data } = await axios.post('http://localhost:5000/api/chat', { message: userMsg.text }, config);
+            const { data } = await axios.post(`${API_URL}/api/chat`, { message: userMsg.text }, config);
 
             const botResponse = {
                 id: Date.now() + 1,
@@ -123,7 +124,7 @@ const Chatbot = () => {
                                                     {msg.extra.products.map(p => (
                                                         <Link to={`/product/${p.id}`} key={p.id} className="bg-white p-2 border border-slate-100 rounded-xl hover:shadow-lg transition-all group overflow-hidden">
                                                             <div className="aspect-square bg-slate-50 rounded-lg mb-2 overflow-hidden flex items-center justify-center">
-                                                                <img src={p.image.startsWith('http') ? p.image : `http://localhost:5000${p.image}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform" alt="" />
+                                                                <img src={p.image.startsWith('http') ? p.image : `${API_URL}${p.image}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform" alt="" />
                                                             </div>
                                                             <p className="text-[9px] font-black uppercase tracking-tighter truncate text-slate-900">{p.name}</p>
                                                             <p className="text-[8px] font-bold text-blue-600">₹{p.price.toLocaleString()}</p>

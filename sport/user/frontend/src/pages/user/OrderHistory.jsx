@@ -1,6 +1,7 @@
 // FIXED BY ANTIGRAVITY - User Dashboard Integration
 import { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
+import API_URL from '../../api';
 import { Link } from 'react-router-dom';
 import {
     FaShoppingBag,
@@ -21,7 +22,7 @@ const OrderHistory = () => {
     const getImageUrl = (image) => {
         if (!image) return 'https://placehold.co/600x600?text=No+Image';
         if (image.startsWith('http')) return image;
-        return `http://localhost:5000${image}`;
+        return `${API_URL}${image}`;
     };
 
     useEffect(() => {
@@ -32,7 +33,7 @@ const OrderHistory = () => {
                         Authorization: `Bearer ${user.token}`
                     }
                 };
-                const { data } = await axios.get('http://localhost:5000/api/orders/mine', config);
+                const { data } = await axios.get(`${API_URL}/api/orders/mine`, config);
                 setOrders(data);
             } catch (error) {
                 console.error('Error fetching orders:', error);
@@ -231,7 +232,7 @@ const OrderHistory = () => {
                                                     try {
                                                         const token = localStorage.getItem('token');
                                                         const config = { headers: { Authorization: `Bearer ${token}` } };
-                                                        await axios.put(`http://localhost:5000/api/orders/${order._id}/cancel`, {}, config);
+                                                        await axios.put(`${API_URL}/api/orders/${order._id}/cancel`, {}, config);
                                                         toast.success('Mission Aborted: Order Cancelled');
                                                         window.location.reload();
                                                     } catch (err) {

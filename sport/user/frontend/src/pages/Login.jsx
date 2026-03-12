@@ -2,6 +2,7 @@ import { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import AuthContext from '../context/AuthContext';
 import axios from 'axios';
+import API_URL from '../api';
 import { FaEnvelope, FaLock, FaGoogle, FaFacebook, FaShieldAlt, FaPaperPlane } from 'react-icons/fa';
 
 const Login = () => {
@@ -21,7 +22,7 @@ const Login = () => {
         try {
             if (isOtpLogin) {
                 if (!otpSent) {
-                    const { data } = await axios.post('http://localhost:5000/api/users/send-otp', { email });
+                    const { data } = await axios.post(`${API_URL}/api/users/send-otp`, { email });
                     setOtpSent(true);
 
                     if (data.message && data.message.includes("OTP generated for debugging:")) {
@@ -33,7 +34,7 @@ const Login = () => {
                         alert(data.message || 'OTP sent to your email!');
                     }
                 } else {
-                    const { data } = await axios.post('http://localhost:5000/api/users/verify-otp', { email, otp });
+                    const { data } = await axios.post(`${API_URL}/api/users/verify-otp`, { email, otp });
                     // Handle manual login since standard login context might only support password
                     localStorage.setItem('token', data.token);
                     localStorage.setItem('user', JSON.stringify(data));
